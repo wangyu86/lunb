@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    font-style: none;
+    text-decoration: none;
+}
+section,.container{
+    margin: 20rem auto;
+    width: 52rem;
+    height: 28rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+    position: relative;
+}
+.container .rahmen{
+    position: relative;
+    width: 52rem;
+    height: 28rem;
+    overflow: hidden;
+}
+.container .rahmen ul{
+    display: flex;
+    position: absolute;
+}
+/* .container .rahmen ul li{
+    float: left;
+} */
+.container .rahmen ol{
+    position: absolute;
+    width: 300%;
+   
+    left: 50%;
+    bottom: 20%;
+    margin: -1.25rem 0 0 -1.25rem;
+}
+.container .rahmen ol li{
+    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+    background: black;
+    float: left;
+    margin-left: 1rem;
+}
+.container .rahmen ol li.on{
+    background: red;
+}
+
+.container .buttonD{
+    position: absolute;
+    width: 52rem;
+    height: 2rem;
+    opacity: .5;
+    top: 50%;
+    margin-top: -1rem;
+}
+.container .buttonD span{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: #cccccc;
+    opacity: .6;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
